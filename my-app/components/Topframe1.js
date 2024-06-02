@@ -40,12 +40,14 @@ const styles = StyleSheet.create({
         fontSize: 40,
         fontWeight: 'bold',
         paddingLeft: 10,
+        top:60,
         
     },
     text2:{
         color: 'black',
         fontSize: 15,
         paddingLeft: 10,
+        top:65,
     },
     imageBox:{
         backgroundColor: 'white',
@@ -53,14 +55,16 @@ const styles = StyleSheet.create({
         height: 60,
         position: 'absolute',
         right: 10,
-        top: 8,
+        top: 50,
         marginRight: 3,
         borderRadius: 50,
     },
     profile:{
         width: 60,
         height: 60,
-        bottom: 5
+        bottom:-30,
+        position: 'absolute',
+        
     }
     
     
