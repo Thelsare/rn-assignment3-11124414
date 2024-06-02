@@ -5,21 +5,21 @@ const tasks = [
   { key: 1, name: "Mobile App Development" },
   { key: 2, name: "Web Development" },
   { key: 3, name: "Pushups" },
-  { key: 4, name: "Cinemas" },
-  { key: 5, name: "Coding" },
-  { key: 6, name: "Road Trips" },
-  { key: 7, name: "Leisure Time" },
-  { key: 8, name: "Lectures" },
-  { key: 9, name: "Assignments" },
-  { key: 10, name: "Software Engineering" },
-  { key: 11, name: "Aerospace Engineering" },
-  { key: 12, name: "Calculus" },
-  { key: 13, name: "Consultant" },
-  { key: 14, name: "Project Manager" },
+  { key: 4, name: "Drawing" },
+  { key: 5, name: "Robotics" },
+  { key: 6, name: "UI Designing" },
+  { key: 7, name: "InfoModelling" },
+  { key: 8, name: "Engineering" },
+  { key: 9, name: "Driving" },
+  { key: 10, name: "Report Writing" },
+  { key: 11, name: " Engineering" },
+  { key: 12, name: "Sales" },
+  { key: 13, name: "Deployment" },
+  { key: 14, name: "Project Work" },
   { key: 15, name: "Database Management" },
 ];
 
-export default function Onsection() {
+export default function Ongsection() {
   return (
     <View style={styles.container}>
       <Text style={styles.biggerText}>Ongoing Tasks</Text>

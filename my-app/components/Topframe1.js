@@ -1,77 +1,38 @@
-import React from 'react';
-import { Image } from 'react-native';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from "react-native";
 
-
-const Topframe1 = () => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.topRectangle}>
-            <Text style={styles.text1}>Hello, Devs</Text>
-            <Text style={styles.text2}>14 Tasks Today</Text>
-
-            
-            </View>
-
-            <View style={styles.imageBox}>
-
-            <Image style={styles.profile} source={require('./person.png')}/>
-
-            </View>
-        </View>
-    );
-};
-
+export default function App() {
+  return (
+    <View style={styles.frameContainer}>
+      <View>
+        <Text style={styles.bigText}>Hello , Devs</Text>
+        <Text>14 tasks today</Text>
+      </View>
+      <View style={styles.imgStyles}>
+        <Image source={require("../components/man.png")} />
+      </View>
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
-    container: {
-        flexDirection: 'row',
-        width: '100%',
-        height: 80,
-        position: 'relative',
-        bottom: 330,
-    },
-    topRectangle:{
-        width: 300,
-        
-    },
-    text1:{
-        color: 'black',
-        fontSize: 40,
-        fontWeight: 'bold',
-        paddingLeft: 10,
-        top:60,
-        
-    },
-    text2:{
-        color: 'black',
-        fontSize: 15,
-        paddingLeft: 10,
-        top:65,
-    },
-    imageBox:{
-        backgroundColor: 'white',
-        width: 60,
-        height: 60,
-        position: 'absolute',
-        right: 10,
-        top: 50,
-        marginRight: 3,
-        borderRadius: 50,
-    },
-    profile:{
-        width: 60,
-        height: 60,
-        bottom:-30,
-        position: 'absolute',
-        
-    }
-    
-    
-
+  frameContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignContent: "center",
+    flexDirection: "row",
+    width: "100%",
+    borderColor: "black",
+  },
+  bigText: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  imgStyles: {
+    backgroundColor: "white",
+    borderRadius: 50,
+    width: 50,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
-
-
-
-
-export default Topframe1;

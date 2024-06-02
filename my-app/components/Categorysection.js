@@ -3,12 +3,12 @@ import { View, Text, StyleSheet, Image, FlatList } from "react-native";
 const categories = [
   { key: 1, name: "Exercise" },
   { key: 2, name: "Study" },
-  { key: 3, name: "Programming" },
-  { key: 4, name: "Rest" },
-  { key: 5, name: "Aerobics" },
-  { key: 6, name: "Assignment" },
-  { key: 7, name: "Engineering" },
-  { key: 8, name: "Testing" },
+  { key: 3, name: "Eat" },
+  { key: 4, name: "Sing" },
+  { key: 5, name: "Pray" },
+  { key: 6, name: "Fast" },
+  { key: 7, name: "Tarry" },
+  { key: 8, name: "Engineering" },
 ];
 
 const renderCategories = ({ item }) => {
@@ -18,7 +18,7 @@ const renderCategories = ({ item }) => {
       <Text>12 Tasks</Text>
       <View style={styles.img}>
         <Image
-          source={require("../assets/img1.png")}
+          source={require("../components/woman.png")}
           style={styles.imgStyle}
           resizeMode="contain"
         />

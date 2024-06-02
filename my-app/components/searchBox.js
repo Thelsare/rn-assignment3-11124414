@@ -1,14 +1,14 @@
-import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from "react-native";
+import { View, StyleSheet, Image, TextInput, TouchableOpacity } from "react-native";
 
 export default function Searchbox() {
   return (
     <View style={styles.searchContainer}>
         <View style={styles.inputContainer}>
-            <Image source={require("../assets/Vector.png")}/>
+            <Image source={require("../components/searchic.jpg")}/>
             <TextInput style={styles.inputStyles} placeholder="Search" placeholderTextColor={"black"}/>
         </View>
         <TouchableOpacity style={styles.imgButtonStyles}>
-            <Image source={require("../assets/bx_slider.png")}/>
+            <Image source={require("../components/slide.jpg")}/>
         </TouchableOpacity>
     </View>
   );
